@@ -1,0 +1,105 @@
+/*Basic colors and styles*/
+:root {
+  --color-primary-background: #1a0b2e;
+  --color-secondary-background: #230e3d;
+  --color-text-white: #ffffff;
+  --color-text-green: #00ff88;
+  --color-gradient: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  --border-radius-box: 40px;
+  --border-radius-btn: 10px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Typography */
+::selection {
+  color: var(--color-text-green);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-primary-background);
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: var(--color-text-white);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 65px;
+  }
+
+  h2 {
+    font-size: 4rem;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  h1 {
+    font-size: 6rem;
+    line-height: 73px;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+    line-height: 58px;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 29px;
+  }
+
+  p {
+    line-height: 24px;
+  }
+}
