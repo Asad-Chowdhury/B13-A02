@@ -21,6 +21,7 @@
 }
 
 .container {
+  min-width: 440px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -36,7 +37,7 @@ html {
 
 body {
   background-color: var(--color-primary-background);
-  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 20px;
   color: var(--color-text-white);
@@ -101,5 +102,118 @@ p {
 
   p {
     line-height: 24px;
+  }
+}
+
+/* Utility CSS - style */
+.flex {
+  display: flex;
+}
+
+/* Utility CSS - component */
+
+a {
+  text-decoration: none;
+  color: var(--color-text-white);
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.btn {
+  border-radius: 10000px;
+  background: var(--color-gradient);
+  border: 0;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 19px;
+  outline: 0;
+  padding: 1.2rem 1.6rem;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* header */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2rem;
+}
+
+.nav__list {
+  display: none;
+  padding: 1.6rem 2rem;
+}
+
+.nav__btn {
+  display: none;
+}
+
+.logo img {
+  width: 14rem;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .navbar {
+    padding: 1.6rem 0;
+  }
+  .logo img {
+    width: 18rem;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 2.2rem;
+  }
+
+  .nav__btn {
+    display: block;
+  }
+
+  .nav__btn::after {
+    content: "-->";
+    padding-left: 4px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .navbar {
+    padding: 1.6rem 0;
+  }
+
+  .logo img {
+    width: 22rem;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 3.2rem;
+  }
+
+  .nav__btn {
+    display: block;
+  }
+
+  .nav__btn::after {
+    content: "-->";
+    padding-left: 4px;
+  }
+
+  .menu-icon {
+    display: none;
   }
 }
