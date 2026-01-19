@@ -358,3 +358,48 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* Section - Why Choose TechWave */
+.why-choose {
+  background-color: rgba(35, 14, 61, 1);
+  padding: 4rem 2rem;
+}
+
+.why-choose h2 {
+  text-align: center;
+}
+
+.why-choose-cards {
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+
+.why-choose-card {
+  padding: 2.4rem;
+  border-radius: var(--border-radius-box);
+  background: rgba(53, 17, 101, 0.4);
+}
+
+.why-choose-description {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 993px) {
+  .why-choose-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+
+  .layout-col-1-row-2 {
+    grid-column: span 1;
+    grid-row: span 2;
+    align-content: center;
+  }
+
+  .layout-col-2-row-1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    align-content: center;
+  }
+}
