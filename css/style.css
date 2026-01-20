@@ -517,6 +517,7 @@ a {
 /* Section - Meet the host */
 .meet-the-host {
   text-align: center;
+  margin-bottom: 6rem;
 }
 
 .host-intro {
@@ -562,6 +563,7 @@ a {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 12rem;
   }
 
   .host-intro {
@@ -589,5 +591,125 @@ a {
 
   .social-icons {
     justify-self: start;
+  }
+}
+
+.footer--center-contents {
+  background-image: url(../images/footer-bg.png);
+  background-size: 210%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 10rem;
+  height: auto;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--color-text-white);
+}
+
+.footer-link img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-link p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.footer-copyright {
+  font-size: 1.3rem;
+  font-weight: 400;
+  opacity: 0.7;
+  margin: 0;
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .footer-bg {
+    padding: 4rem 2rem;
+  }
+
+  .footer--center-contents {
+    background-size: 150%;
+    width: 100%;
+    gap: 2.4rem;
+  }
+
+  .footer-logo {
+    width: 16rem;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-link {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-link p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .footer-bg {
+    padding: 6rem 2rem;
+  }
+
+  .footer--center-contents {
+    background-size: 100%;
+    width: cover;
+    gap: 3rem;
+  }
+
+  .footer-logo {
+    width: 18rem;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+
+  .footer-link {
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .footer-link p {
+    font-size: 1.6rem;
+  }
+
+  .footer-copyright {
+    font-size: 1.5rem;
   }
 }
