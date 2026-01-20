@@ -571,6 +571,7 @@ a {
   height: 40px;
   padding: 8px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .icon {
@@ -644,6 +645,7 @@ a {
 }
 
 .footer-link {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
